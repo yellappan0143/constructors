@@ -2,7 +2,7 @@ package com.jsp.jobapplication;
 
 public class BankAccount 
 {
-	// DATA MEMBERS
+	// DATA MEMBERS DECLEARED
 	String Name;
 	long   Account_No;
 	double Balance;
@@ -14,22 +14,20 @@ public class BankAccount
 	{
 		this.Name       = Name;
 		this.Account_No = Account_No;
-		this.Balance    = Balance;
-		 
+		this.Balance    = Balance;	 
 	}
 	
-    // CREATE A METHOD FOR WITHDRAW AMOUNT
+        // CREATE A METHOD FOR WITHDRAW AMOUNT
 	public void withdraw(double W_Amt) 
 	{
 		if(Balance>=0 && W_Amt>=0)
 		{
-			this.Balance = Balance - W_Amt;
-			
+			this.Balance = Balance - W_Amt;	
 			System.out.println("WITHDRAW AMOUNT "+" : "+W_Amt);
 		}
 	}
 	
-    // CREATE A METHOD FOR DEPOSIT AMOUNT
+        // CREATE A METHOD FOR DEPOSIT AMOUNT
 	public void deposit(double D_Amt) 
 	{
 		if(Balance>=0 && D_Amt>=0)
@@ -40,17 +38,14 @@ public class BankAccount
 	}
 	
     // CREATE A METHOD FOR CHECK BALANCE ACCOUNT
-    public void checkbalance() {
-    	
-    	 
+    public void checkbalance() 
+	{
     	System.out.println("CHECK BALANCE \t : "+Balance);
-		
 	}
     
     // CREATE A METHOD FOR DISPLAY ACCOUNT DETAILS 
 	public  void displaydetails() 
 	{
-		
 		System.out.println("BANK ACCOUNT DETAILS ");
 		System.out.println("----------------------------");
 		
@@ -68,14 +63,10 @@ public class BankAccount
 	public static void main(String[] args) 
 	{
 		// BY CREATING OBJECTS CLAUSE
-		BankAccount INDIAN = new BankAccount("Lance", 6549873210l,5000.0d);
-					
-		            INDIAN.displaydetails();
-		            INDIAN.	deposit(500.0d);
-					INDIAN.	withdraw(100.0d);
-					INDIAN.	checkbalance();
-//					System.out.println("----------------------------");
-//		            INDIAN.displaydetails();
-  
+		BankAccount INDIAN = new BankAccount("Lance", 6549873210l,5000.0d);		
+			    INDIAN.displaydetails();
+			    INDIAN.deposit(500.0d);
+			    INDIAN.withdraw(100.0d);
+			    INDIAN.checkbalance();
 	}
 }
