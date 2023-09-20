@@ -35,7 +35,6 @@ public class Customer
 		{
 			System.out.println(" Invalid Email id");
 		}
-		
 	}
 	
 	public void details() 
@@ -46,21 +45,16 @@ public class Customer
 		System.out.println("Name :"+Name);
 		System.out.println("Phone Number :"+Ph_no);
 		System.out.println("Email :"+Email);
-		
-		
 	}
 	
-
 	public static void main(String[] args) 
 	{
-		Customer C = new Customer("Madesh",7894561130l , "madesh@gmail.com", 9900);
+	    Customer C = new Customer("Madesh",7894561130l , "madesh@gmail.com", 9900);
 		         C.login();
 		         C.details();
-		         
-	    Customer C1 = new Customer("Lance",9089455660l, 9100);
+		
+	    Customer C1 = new Customer("Lance",9089455660l, 9100); // Second User
 		         C1.login();
 		         C1.details();
-
 	}
-
 }
