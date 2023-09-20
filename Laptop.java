@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Laptop 
 {
+	// DATA MEMBERS
 	String Company_Name;
 	String laptop_id;
 	int Year;
@@ -13,14 +14,14 @@ public class Laptop
 	double price;
 	static int n=0;
 	
+	//CONSTRUCTORS INITIALIZATIONS
 	public Laptop(String Company_Name,int Year,String Model,String Processer,String RamSize,int price,String laptop_Id)
 	{
-		
-		this.Year=Year;
-		this.Model=Model;
+		this.Year      = Year;
+		this.Model     = Model;
 		this.Processer = Processer;
-	    this.RamSize=RamSize;
-		this.price=price;
+	        this.RamSize   = RamSize;
+		this.price     = price;
 		n++;
 	}
 	public void DisplayDetails()
@@ -39,10 +40,9 @@ public class Laptop
 		System.out.println("Enter the price of laptop");
 		price = sc.nextInt();
 		
-		
-		
+		// PRINTING STATEMENTS...
 		System.out.println("Company Name:" + Company_Name);
-	    System.out.println("Year :" + Year);
+	        System.out.println("Year :" + Year);
 		System.out.println("Model :" + Model);
 		System.out.println("Pocessor  :" + Processer);
 		System.out.println("RamSaize :" + RamSize);
@@ -53,8 +53,7 @@ public class Laptop
 
 	public static void main(String[] args) 
 	{
-         Laptop L = new Laptop(null, n, null, null, null, n, null);
-                L.DisplayDetails();
+            Laptop L = new Laptop(null, n, null, null, null, n, null);
+                   L.DisplayDetails();
 	}
-
 }
