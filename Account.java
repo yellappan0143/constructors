@@ -2,7 +2,7 @@ package com.qsp.test;
 
 public class Account 
 {
-	String Name;
+    String Name;
     long Acc_no;
     String IFSC;
     double Balance;
@@ -11,10 +11,10 @@ public class Account
     
     public  Account(String Name,long Acc_no,String IFSC,double Balance) 
     {
-		this.Name=Name;
-		this.Acc_no=Acc_no;
-		this.IFSC=IFSC;
-		this.Balance=Balance;
+		this.Name    = Name;
+		this.Acc_no  = Acc_no;
+		this.IFSC    = IFSC;
+		this.Balance = Balance;
 		
 	}
     
