@@ -9,16 +9,16 @@ public class Customer
 	
 	public Customer(String Name,long Ph_no,String Email,int C_pw)
 	{
-		this.Name=Name;
-		this.Ph_no=Ph_no;
-		this.Email=Email;
-		this.C_pw=C_pw;
+		this.Name  = Name;
+		this.Ph_no = Ph_no;
+		this.Email = Email;
+		this.C_pw  = C_pw;
 	}
 	public Customer(String Name,long Ph_no,int C_pw)
 	{
-		this.Name=Name;
-		this.Ph_no=Ph_no;
-		this.C_pw=C_pw;
+		this.Name  = Name;
+		this.Ph_no = Ph_no;
+		this.C_pw  = C_pw;
 	}
 	
 	public void login() 
