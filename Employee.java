@@ -12,16 +12,15 @@ public class Employee
 	public Employee(int E_id,String Name,double Salary,int Experence) 
 	{
 		        this.E_Id      = E_id;
-				this.Name      = Name;
-				this.Salary    = Salary;
-				this.Experence = Experence;		
+			this.Name      = Name;
+			this.Salary    = Salary;
+			this.Experence = Experence;		
 	}
 	
 	// CREATE A METHOD FOR UPDATE SALARY
 	public void updatesalary(double NewSalary) 
 	{
 		this.Salary = Salary + NewSalary;
-		
 		System.out.println("UPDATED SALARY\t :"+Salary);
 	}
 	
@@ -37,7 +36,6 @@ public class Employee
 		System.out.println("EMPLOYEE EXPRENCE: "+Experence+"-Years");
 		
 		System.out.println("-------------------------");
-		
 		updatesalary(599.0d);		
 	}
      
